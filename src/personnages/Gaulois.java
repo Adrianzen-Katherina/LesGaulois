@@ -33,7 +33,10 @@ public class Gaulois {
 	
 	public void frapper(Romain romain) {
 		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
-		romain.recevoirCoup(force/3);
+		romain.recevoirCoup(force*effetPotion /3);
+		if (effetPotion>1) {
+			effetPotion--;
+		}
 		
 	}
 	
